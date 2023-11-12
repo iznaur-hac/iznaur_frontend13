@@ -11,6 +11,9 @@ body{
 html{
     scroll-behavior: smooth;
 }
+p{
+    margin-bottom: 0px;
+}
 
 ::selection{
     background-color: #CAA892;
@@ -19,16 +22,16 @@ html{
 
 .container{
     max-width: 1400px;
-    margin: auto;
+    margin: auto !important;
 }
 .nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 30px;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin-top: 30px !important;
 }
 .nav img{
-    width: 11%;
+    max-width: 142px;
 }
 .menu{
     display: flex;
@@ -39,6 +42,9 @@ html{
     line-height: 21.79px;
     color: #111111;
 }
+ul{
+    margin-bottom: 0rem !important;
+}
 .menu a{
     font-family:'Open Sans', sans-serif;
     line-height: 21.79px;
@@ -47,25 +53,25 @@ html{
     font-weight: 600;
 }
 .nav-menu{
-    display: flex;
+    display: flex !important;
     column-gap: 30px;
 }
-.btn{
-    padding: 2px 13px;
-    border-radius: 15px 0px 15px 0px;
-    font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
-    background: #CAA892;
-    border: solid 2px;
-    border-color: #CAA892;
+.btn1{
+    padding: 2px 13px ;
+    border-radius: 15px 0px 15px 0px ;
+    font-size: 16px ;
+    font-family: 'Open Sans', sans-serif ;
+    background: #CAA892 ;
+    border: solid 2px ;
+    border-color: #CAA892 ;
     color: rgb(255, 255, 255);
-    font-weight: 550;
+    font-weight: 550 ;
 }
 .menu a:hover{
     color: #646464;
     transition: all .3s;
 }
-.btn:hover{
+.btn1:hover{
     background-color: white;
     color: #CAA892;
     transition: all .3s;
@@ -81,7 +87,7 @@ html{
 }
 
 .main img{
-    width:700px;
+    max-width:700px;
     height:auto;
 }
 
@@ -114,13 +120,13 @@ html{
     margin-bottom: 30px;
 }
 
-.grean-btn{
+.grean-btn1{
     background-color: #37806B;
     font-size: 18px;
     border-color: #37806B;
 }
 
-.grean-btn:hover{
+.grean-btn1:hover{
     color: #37806B;
 }
 
@@ -208,7 +214,7 @@ html{
 }
 
 .about-box1 img{
-    width: 670px;
+    max-width: 670px;
     height: auto;
 }
 
@@ -244,7 +250,7 @@ html{
     width: 526px;
 }
 
-.about-btn{
+.about-btn1{
     margin-top: 20px;
 }
 
@@ -272,7 +278,6 @@ html{
     margin-top: 85px;
     margin-bottom: 105;
     display: flex;
-    justify-content: space-betweenw;
     height: 278px;
 }
 
@@ -293,6 +298,7 @@ font-size: 50px;
 font-weight: 700;
 text-align: center;
 color: #212121;
+margin-bottom: 0px;
 }
 
 .work-item__subtitle{
@@ -312,7 +318,18 @@ color: #212121;
     display: flex;
 }
 
+.vector1s{
+    height: 95px;
+    align-self: center;
+    display: flex;
+}
+
 .vector1-box1{
+    width: 109px;
+    border-top: 2px solid #E0E0E0;
+    height: 93px;
+}
+.vector1s-box1{
     width: 109px;
     border-top: 2px solid #E0E0E0;
     height: 93px;
@@ -322,8 +339,17 @@ color: #212121;
     border-right: 2px solid #E0E0E0;
     height: 93px;
 }
+.vector1s-box2{
+    border-right: 2px solid #E0E0E0;
+    height: 93px;
+}
 
 .vector1-box3{
+    width: 109px;
+    border-bottom: 2px solid #E0E0E0;
+    height: 93px;
+}
+.vector1s-box3{
     width: 109px;
     border-bottom: 2px solid #E0E0E0;
     height: 93px;
@@ -379,6 +405,7 @@ color: #212121;
     margin-top: 100px;
     display: flex;
     justify-content: space-around;
+    column-gap: 100px;
 }
 
 .testimonials-item{
@@ -403,6 +430,7 @@ color: #212121;
 .stext{
     font-size: 24px;
     line-height: 32px;
+    margin-bottom: 0px;
 }
 
 .testimonials-item-text{
@@ -421,7 +449,7 @@ color: #212121;
 
 .blog-items{
     display: flex;
-    column-gap: 136px;
+    column-gap: 83px;
 }
 
 .blog-item{
@@ -535,7 +563,7 @@ color: #212121;
     color: #646464;
 }
 
-.regist-btn{
+.regist-btn1{
     margin-left: -6px;
     width: 18%;
     border-radius: 0px 0px 15px 0px;
@@ -554,6 +582,7 @@ color: #212121;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     column-gap: 50px;
+    flex-wrap: wrap;
 }
 
 .footer-item__img{
@@ -567,6 +596,7 @@ color: #212121;
     font-size: 24px;
     font-weight: 600;
     padding-bottom: 15px;
+    margin-bottom: 0px;
 }
 
 .footer-item__subtitle{
@@ -576,6 +606,10 @@ color: #212121;
     font-weight: 400;
     width: 380px;
     padding-top: 15px;
+}
+
+.footer-item ul{
+    padding-left: 0px;
 }
 
 .footer-item li{
@@ -644,4 +678,111 @@ color: #212121;
 .footer-item__instagram-svg:hover{
     fill: #37806B;
     cursor: pointer;
+}
+
+@media (max-width: 1400px) {
+    .main{
+        flex-wrap: wrap;
+    }
+    .taitle-text{
+        margin-bottom: 15px;
+    }
+    .about-box2{
+        flex-wrap: wrap;
+        margin-left: 20px;
+    }
+    .about-box2>img{
+        max-width: 712px;
+        padding-top: 50px;
+    }
+    .content-boxs{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .content-box{
+        margin-bottom: 10px;
+    }
+    .testimonials-items{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .testimonials-item{
+        margin-bottom: 10px;
+    }
+    .about-box1{
+        flex-wrap: wrap-reverse;
+    }
+    .blog-items{
+        flex-wrap: wrap;
+    }
+    .work-items{
+        flex-wrap: wrap;
+    }
+
+    .vector1s{
+        height: 180px;
+    }
+    .footer-items{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (min-width: 992px) and (max-width: 1200px){
+    
+    .vector2-box1{
+        border-color: transparent;
+    }
+    .vector2-box2{
+        border-color: transparent;
+    }
+    .vector2-box3{
+        border-color: transparent;
+    }
+    .vector1s{
+        height: 93px;
+    }
+}
+
+@media (max-width: 992px) {
+    .work{
+        height: 1000px;
+    }
+    .vector1s{
+        flex-direction: row-reverse;
+    }
+    .vector1s-box1{
+        border-color: transparent;
+    }
+    .vector2-box1{
+        border-color: transparent;
+    }
+    .vector2{
+        height: 0px;
+    }
+    
+    .footer-items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 768px) {
+    .footer-items{
+        grid-template-columns: 1fr;
+    }
+    .work-items{
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 10px;
+    }
+    .work{
+        height: 1190px;
+    }
+    .vector1s{
+        display: none;
+    }
+    .vector1{
+        display: none;
+    }
+    .vector2{
+        display: none;
+    }
+    
 }
